@@ -1,6 +1,6 @@
 require 'spotify'
 
-config_dir = File.dirname(__FILE__) + '/config'
+config_dir = File.dirname(__FILE__) + '/../config'
 app_json = JSON.parse IO.read("#{config_dir}/spotify_app.json")
 
 account = Spotify::Accounts.new

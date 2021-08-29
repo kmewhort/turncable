@@ -1,0 +1,34 @@
+<h1>Turncable admin</h1>
+
+<h2>Spotify</h2>
+
+<h3>Spotify devices</h3>
+<ul>
+  <% spotify_client.api.connect.devices.each do |device| %>
+    <li><%= device.name.to_s %></li>
+  <% end %>
+</ul>
+
+<h3>Currently playing:</h3>
+  <div>
+    <label>Artist name:</label>
+    <span><%= spotify_client.current_artist_name %></span>
+  </div>
+  <div>
+    <label>Track/item:</label>
+    <span><%= spotify_client.current_item_name %></span>
+  </div>
+</h3>
+
+<h2>NFC</h2>
+<div>
+  <label>Enabled:</label>
+  <span><%= (nfc != nil).to_s %></span>
+</div>
+<div>
+  <label>Current card UUID:</label>
+  <span><%= @current_card %></span>
+</div>
+<div>
+  <%= button_to "Record #{spotify_client.current_item_name}", record_application_path(nfc_uuid: @current_card, spotify_uri: spotify_client.current_item_uri), method: :put, disabled: @current_card.blank? %>
+</div>

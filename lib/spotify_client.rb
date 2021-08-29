@@ -1,7 +1,7 @@
 require 'spotify'
 
 class SpotifyClient
-  CONFIG_DIR = File.dirname(__FILE__) + '/config'
+  CONFIG_DIR = File.dirname(__FILE__) + '/../config'
 
   def api
     Spotify::SDK.new(session)
@@ -11,6 +11,30 @@ class SpotifyClient
     @session ||= Spotify::Accounts::Session.from_refresh_token(account, auth_json['refresh_token'])
     @session.refresh! if @session.expired? || @session.expired?.nil?
     @session
+  end
+
+  def current_artist_name(from_cache = true)
+    @current_artist_name = nil unless from_cache
+    @current_artist_name ||= api.connect.playback.artists.first.name
+  rescue RuntimeError => e
+    # nothing playing
+    nil
+  end
+
+  def current_item_name(from_cache = true)
+    @current_track_name = nil unless from_cache
+    @current_track_name ||= api.connect.playback.item.name
+  rescue RuntimeError => e
+    # nothing playing
+    nil
+  end
+
+  def current_item_uri(from_cache = true)
+    @current_item_uri = nil unless from_cache
+    @current_item_uri = api.connect.playback.item.uri
+  rescue RuntimeError => e
+    # nothing playing
+    nil
   end
 
   private

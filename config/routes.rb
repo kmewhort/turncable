@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: "application#index" 
+
+  resource :application, controller: :application do
+    collection do
+      get :index
+      put :record
+    end
+  end
 end

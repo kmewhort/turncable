@@ -31,9 +31,13 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'taptag', github: 'kmewhort/taptag'
 gem "spotify-ruby", github: 'kmewhort/spotify-ruby'
 
+gem 'dotenv-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry'
+  gem 'pry-byebug'
 end
 
 group :development do
