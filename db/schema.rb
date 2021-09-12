@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_08_29_011505) do
 
   create_table "discs", force: :cascade do |t|
     t.string "nfc_uuid"
-    t.string "spocify_uri"
+    t.string "spotify_uri"
   end
 
 end

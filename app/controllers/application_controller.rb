@@ -4,15 +4,19 @@ class ApplicationController < ActionController::Base
   helper_method :spotify_client, :nfc
 
   def index
-    @current_card = nfc&.read_ntag_card
+    @current_card = nfc&.card_uid&.pack('c*')&.unpack1('H*')
+    @current_disc = Disc.find_by(nfc_uuid: @current_card)
   end
 
   def record 
     @disc = Disc.find_or_initialize_by(nfc_uuid: params[:nfc_uuid]) 
     @disc.spotify_uri = params[:spotify_uri]
-    @disc.save!
-    flash[:success] = "#{params[spotify_uri]} recorded to #{params[:nfc_uuid]}" 
-    redirect_to application_index
+    if !@disc.save
+      flash[:error] = "Unable to record: #{@disc.errors.full_messages}"
+    else
+      flash[:success] = "#{params[:spotify_uri]} recorded to #{params[:nfc_uuid]}" 
+    end
+    redirect_to application_path
   end
 
   protected

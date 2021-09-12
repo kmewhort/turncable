@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <h1>Turncable</h1>
+    <% flash.each do |type, msg| %>
+      <div>
+        <strong><%= msg %></strong>
+      </div>
+      <% end %>
+      <%= yield %>
   </body>
 </html>
