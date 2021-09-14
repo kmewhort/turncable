@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_29_011505) do
+ActiveRecord::Schema.define(version: 2021_09_14_003635) do
+
+  create_table "configs", force: :cascade do |t|
+    t.string "spotify_device"
+  end
 
   create_table "discs", force: :cascade do |t|
     t.string "nfc_uuid"
     t.string "spotify_uri"
+    t.datetime "last_played_at"
   end
 
 end

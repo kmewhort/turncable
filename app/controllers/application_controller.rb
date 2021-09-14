@@ -19,6 +19,11 @@ class ApplicationController < ActionController::Base
     redirect_to application_path
   end
 
+  def set_device
+    Config.get.update_attribute(:spotify_device, params[:spotify_device])
+    redirect_to application_path
+  end
+
   protected
   def spotify_client
     @spotify_client ||= ::SpotifyClient.new

@@ -37,6 +37,22 @@ class SpotifyClient
     nil
   end
 
+  def play_item!(device_id, uri)
+    api.connect.devices.each do |device|
+      if device.id == device_id
+        api.connect.devices[0].play!({
+          uri: uri,
+          position_ms: 0
+        })
+        return
+      end
+    end
+  end
+
+  def devices
+    api.connect.devices
+  end
+
   private
 
   def app_json
