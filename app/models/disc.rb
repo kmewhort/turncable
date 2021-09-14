@@ -13,11 +13,11 @@ class Disc < ApplicationRecord
   end
 
   def self.most_recently_played
-    self.order(last_played_at: :desc).limit(1).first
+    self.where.not(last_played_at: nil).order(last_played_at: :desc).limit(1).first
   end
 
-  def self.changable?
+  def self.changeable?
     most_recent = most_recently_played
-    most_recently_played.blank? || most_recently_played.last_played_at < Time.now-60.seconds
+    most_recent.blank? || (most_recent.last_played_at < Time.now-60.seconds)
   end
 end

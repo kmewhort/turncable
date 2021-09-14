@@ -1,0 +1,10 @@
+[Unit]
+Description=Turncable
+After=network.target
+
+[Service]
+ExecStart=/home/pi/turncable/server.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target

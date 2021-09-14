@@ -1,3 +1,5 @@
+require 'spotify_client'
+
 namespace :turncable do
   task :check_disc => :environment do
     current_disc = Disc.find_from_current_card
@@ -5,9 +7,9 @@ namespace :turncable do
     
     spotify_client = ::SpotifyClient.new
 
-    if current_disc && current_disc.spotify_uri != spotify_client.current_item_uri && Disc.changable?
+    if current_disc && current_disc.spotify_uri != spotify_client.current_item_uri && Disc.changeable?
       spotify_client.play_item!(Config.get.spotify_device, current_disc.spotify_uri)
-      current_disc.update_attribute(:most_recently_played_at, Time.now)
+      current_disc.update_attribute(:last_played_at, Time.now)
     end
   end
 end
