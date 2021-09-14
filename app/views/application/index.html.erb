@@ -4,11 +4,12 @@
 <ul>
   <% spotify_client.devices.each do |device| %>
     <li>
-      <%= "#{device.name.to_s} (#{device.id}) %>
+      <%= "#{device.name.to_s} (#{device.id})" %>
       <% if Config.get.spotify_device == device.id %>
         Current
       <% else %>
         <%= link_to "Use", set_device_application_path(spotify_device: device.id), method: :put %>
+      <% end %>
     </li>
   <% end %>
 </ul>
