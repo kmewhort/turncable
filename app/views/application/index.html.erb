@@ -1,18 +1,23 @@
 <h2>Spotify</h2>
 
 <h3>Spotify devices</h3>
-<ul>
+<table>
+  <tbody>
   <% spotify_client.devices.each do |device| %>
-    <li>
-      <%= "#{device.name.to_s} (#{device.id})" %>
-      <% if Config.get.spotify_device == device.id %>
-        Current
-      <% else %>
-        <%= link_to "Use", set_device_application_path(spotify_device: device.id), method: :put %>
-      <% end %>
-    </li>
+    <tr>
+      <td><%= device.name.to_s %></td>
+      <td><%= device.id %></td>
+      <td>
+        <% if Config.get.spotify_device == device.id %>
+          Current
+        <% else %>
+          <%= link_to "Use", set_device_application_path(spotify_device: device.id), method: :put %>
+        <% end %>
+      </td>
+    </tr>
   <% end %>
-</ul>
+  <tbody>
+</table>
 
 <h3>Currently playing:</h3>
   <div>

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     collection do
       get :index
       put :record
+      put :set_device
     end
   end
 end
