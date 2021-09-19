@@ -44,5 +44,5 @@
   <span><%= @current_disc&.spotify_uri %></span>
 </div>
 <div>
-  <%= button_to "Record #{spotify_client.current_item_name}", record_application_path(nfc_uuid: @current_card, spotify_uri: spotify_client.current_item_uri), method: :put, disabled: @current_card&.blank? %>
+  <%= button_to "Record #{spotify_client.current_item_name}", record_application_path(nfc_uuid: @current_card, spotify_uri: spotify_client.current_item_uri, spotify_duration: spotify_client.current_item_duration), method: :put, disabled: @current_card&.blank? %>
 </div>

@@ -2,8 +2,6 @@ class Disc < ApplicationRecord
   validates :nfc_uuid, uniqueness: true, presence: true
   validates :spotify_uri, presence: true
 
-  DISC_CHANGE_MINIMUM = 60.seconds
-
   def self.find_from_current_card
     require 'taptag'
     require 'taptag/nfc'
@@ -18,6 +16,6 @@ class Disc < ApplicationRecord
 
   def self.changeable?
     most_recent = most_recently_played
-    most_recent.blank? || (most_recent.last_played_at < Time.now-60.seconds)
+    most_recent.blank? || (most_recent.last_played_at+(most_recent.playback_duration_ms.to_f/1000).seconds < Time.now)
   end
 end
