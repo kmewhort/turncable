@@ -37,6 +37,10 @@ class SpotifyClient
     nil
   end
 
+  def current_item_duration
+    api.connect.playback.item.duration_ms
+  end
+
   def play_item!(device_id, uri)
     api.connect.devices.each do |device|
       if device.id == device_id

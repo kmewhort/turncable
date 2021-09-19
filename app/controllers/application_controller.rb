@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   def record 
     @disc = Disc.find_or_initialize_by(nfc_uuid: params[:nfc_uuid]) 
     @disc.spotify_uri = params[:spotify_uri]
+    @disc.playback_duration_ms = params[:spotify_duration]
     if !@disc.save
       flash[:error] = "Unable to record: #{@disc.errors.full_messages}"
     else
