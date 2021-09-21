@@ -1,0 +1,1000 @@
+   56  cd python/
+   57  ls
+   58  python3 example_get_uid.py 
+   59  cd pn532/
+   60  ls
+   61  vi pn532.py 
+   62  cd ..
+   63  vi example_get_uid.py 
+   64  history |grep config
+   65  sudo raspi-config
+   66  cd raspberrypi/
+   67  ls
+   68  cd python/pn532/
+   69  cd ..
+   70  ls
+   71  vi example_get_uid.py 
+   72  python3 example_get_uid.py 
+   73  cd ..l..
+   74  ls
+   75  cd ~
+   76  ln
+   77  rn
+   78  ls
+   79  rm -R raspberrypi/
+   80  cd nfc-test/waveshare_demo_code/raspberrypi/
+   81  ls
+   82  cd python/
+   83  ls
+   84  python3 example_get_uid.py
+   85  vi example_get_uid.py 
+   86  python3 example_get_uid.py
+   87  cd ..l..
+   88  cd ../..
+   89  ls
+   90  cd raspberrypi/
+   91  ls
+   92  cd ..
+   93  ls
+   94  cd ..
+   95  mkdir turncable
+   96  cd turncable/
+   97  ls
+   98  vi Gemfile
+   99  bundle install
+  100  rvm
+  101  rvm list
+  102  rvm use ruby-2.7.4
+  103  gem install bundler
+  104  bundle install
+  105  ls
+  106  which ruby
+  107  cd /home/pi/.rvm/gems/
+  108  find . |grep taptag
+  109  cd ruby-2.7.4/bundler/gems/taptag-1107e412f982/vendor/
+  110  ls
+  111  cd ..
+  112  ls
+  113  cat RASPI_SETUP.md 
+  114  ls
+  115  bin/pi/install_deps 
+  116  cat bin/pi/install_deps 
+  117  cd ../../
+  118  cd ~
+  119  cd nfc-test/waveshare_demo_code/
+  120  ls
+  121  cd raspberrypi/
+  122  ls
+  123  cd python/
+  124  ls
+  125  cd pn532/
+  126  ls
+  127  cd ../..
+  128  ls
+  129  cd ..
+  130  cd raspberrypi/
+  131  cd c/
+  132  ls
+  133  gcc -c -Wall -Werror -fpic pn532.c
+  134  gcc -c -Wall -Werror -fpic pn532_rpi.c
+  135  gcc -shared -o libpn532.so pn532.o
+  136  gcc -shared -o libpn532_rpi.so pn532_rpi.o
+  137  ls
+  138  cp *.so /usr/lib
+  139  sudo cp *.so /usr/lib
+  140  cd ~
+  141  ls
+  142  cd turncable/
+  143  ls
+  144  bundle exec irb
+  145  cd ..
+  146  ls
+  147  cd nfc-test/waveshare_demo_code/raspberrypi/c/
+  148  ls
+  149  cd ..
+  150  ls
+  151  cd python/
+  152  ls
+  153  vi example_get_uid.py 
+  154  ls
+  155  cd nfc-test/waveshare_demo_code/
+  156  ls
+  157  cd raspberrypi/
+  158  ls
+  159  cd python/
+  160  ls
+  161  vi example_get_uid.py 
+  162  cd ..
+  163  ls
+  164  cd ..
+  165  ls
+  166  cd turncable/
+  167  ls
+  168  vi Gemfile
+  169  cat Gemfile
+  170  git pull
+  171  bundle install
+  172  rvm
+  173  rvm list
+  174  rvm use ruby-2.7.4
+  175  bundle install
+  176  bundle exec irb
+  177  ls
+  178  history
+  179  vi Gemfile
+  180  bundle install
+  181  bundle exec irb
+  182  vi Gemfile
+  183  bundle install
+  184  bundle exec irb
+  185  bundle update
+  186  bundle exec irb
+  187  ls
+  188  vi Gemfile
+  189  bundle install
+  190  ls
+  191  cd nfc-test/
+  192  cd ..
+  193  cd turncable/
+  194  ls
+  195  cat Gemfile
+  196  vi turncable.rb
+  197  cat Gemfile
+  198  vi turncable.rb 
+  199  mkdir config
+  200  cd config/
+  201  vi spotify.json
+  202  vi spotify.json 
+  203  cp turncable.rb authorize_spotify.rb
+  204  cd ..
+  205  cp turncable.rb authorize_spotify.rb
+  206  vi authorize_spotify.rb 
+  207  ls
+  208  ruby authorize_spotify.rb 
+  209  bundle exec ruby
+  210  rvm
+  211  rvm list
+  212  rvm alias create default ruby-2.7.4
+  213  rvm list
+  214  ruby
+  215  cd ..
+  216  cd turncabe
+  217  cd turncable
+  218  rvm use default
+  219  ruby
+  220  ls
+  221  ruby authorize_spotify.rb 
+  222  bundle exec ruby authorize_spotify.rb 
+  223  bundle install
+  224  bundle exec ruby authorize_spotify.rb 
+  225  vi authorize_spotify.rb 
+  226  bundle exec ruby authorize_spotify.rb 
+  227  bundle exec irb
+  228  bundle install
+  229  bundle exec irb
+  230  ls
+  231  cat Gemfile.lock |grep spotify
+  232  bundle exec irb
+  233  ls
+  234  vi Gemfile
+  235  vi authorize_spotify.rb 
+  236  bundle exec ruby authorize_spotify.rb 
+  237  vi authorize_spotify.rb 
+  238  bundle exec ruby authorize_spotify.rb 
+  239  mv config/spotify.json config/spotify_app.json
+  240  vi authorize_spotify.rb 
+  241  bundle exec ruby authorize_spotify.rb 
+  242  vi config/spotify_app.json 
+  243  bundle exec ruby authorize_spotify.rb 
+  244  ls
+  245  cd turncable/config/
+  246  ls
+  247  cd ..
+  248  ls
+  249  rvm use default
+  250  bundle exec ruby authorize_spotify.rb 
+  251  bundle install
+  252  bundle update spotify-ruby
+  253  bundle exec ruby authorize_spotify.rb 
+  254  vi ./authorize_spotify.rb 
+  255  bundle update spotify-ruby
+  256  bundle exec ruby authorize_spotify.rb 
+  257  ls
+  258  cd turncable/
+  259  ls
+  260  bundle exec ./authorize_spotify.rb 
+  261  rvm use default
+  262  bundle exec ./authorize_spotify.rb 
+  263  bundle exec ruby ./authorize_spotify.rb 
+  264  ls
+  265  vi authorize_spotify.rb 
+  266  vi config/spotify_app.json 
+  267  cat config/spotify_app.json 
+  268  vi authorize_spotify.rb 
+  269  vi config/spotify_app.json 
+  270  vi authorize_spotify.rb 
+  271  bundle exec ruby ./authorize_spotify.rb 
+  272  vi config/spotify_app.json 
+  273  bundle exec ruby ./authorize_spotify.rb 
+  274  ls
+  275  vi config/spotify_app.json 
+  276  bundle exec ruby ./authorize_spotify.rb 
+  277  ls
+  278  vi Gemfile.lock 
+  279  vi Gemfile
+  280  bundle install
+  281  ls
+  282  bundle exec ruby ./authorize_spotify.rb 
+  283  bundle update spotify-ruby
+  284  bundle exec ruby ./authorize_spotify.rb 
+  285  vi ./authorize_spotify.rb 
+  286  bundle exec ruby ./authorize_spotify.rb 
+  287  cat config/spotify_auth.json 
+  288  ls
+  289  vi turncable.rb 
+  290  vi authorize_spotify.rb 
+  291  vi turncable.rb 
+  292  cat authorize_spotify.rb 
+  293  s
+  294  ls
+  295  vi turncable.rb 
+  296  cp turncable.rb spotify_client.rb
+  297  vi spotify_client.rb 
+  298  vi turncable.rb 
+  299  vi spotify_client.rb 
+  300  vi turncable.rb 
+  301  bundle exec ruby ./turncable.rb 
+  302  ls
+  303  vi turncable.rb 
+  304  vi spotify_client.rb 
+  305  vi turncable.rb 
+  306  bundle exec ruby ./turncable.rb 
+  307  cat authorize_spotify.rb 
+  308  vi spotify_client.rb 
+  309  vi turncable.rb 
+  310  bundle exec ruby ./turncable.rb 
+  311  vi spotify_client.rb 
+  312  bundle exec ruby ./turncable.rb 
+  313  vi spotify_client.rb 
+  314  bundle exec irb
+  315  ls
+  316  vi spotify_client.rb 
+  317  bundle exec irb
+  318  vi spotify_client.rb 
+  319  bundle exec ruby ./turncable.rb 
+  320  vi turncable.rb 
+  321  bundle exec ruby ./turncable.rb 
+  322  ls
+  323  cd turncable/
+  324  ls
+  325  cat spotify_client.rb 
+  326  ls
+  327  cat turncable.rb 
+  328  bundle exec ruby turncable.rb 
+  329  rvm use default
+  330  bundle exec ruby turncable.rb 
+  331  vi turncable.rb 
+  332  bundle exec ruby turncable.rb 
+  333  vi turncable.rb 
+  334  bundle exec ruby turncable.rb 
+  335  vi turncable.rb 
+  336  bundle exec ruby turncable.rb 
+  337  vi turncable.rb 
+  338  bundle exec ruby turncable.rb 
+  339  vi turncable.rb 
+  340  bundle exec ruby turncable.rb 
+  341  vi turncable.rb 
+  342  bundle exec ruby turncable.rb 
+  343  $ sqlite3 --version
+  344  apt-get install sqlite3
+  345  sudoapt-get install sqlite3
+  346  sudo sudoapt-get install sqlite3
+  347  sudo apt-get install sqlite3
+  348  sqlite --version
+  349  sqlite3
+  350  node --version
+  351  sudo apt-get install nodejs
+  352  node --version
+  353  npm install -g yarn
+  354  sudo apt-get install npm
+  355  npm install -g yarn
+  356  sudo npm install -g yarn
+  357  gem install rails
+  358  cd ..
+  359  gem install rails
+  360  ls
+  361  mv turncable turncable-proto
+  362  rails --version
+  363  rails new turncable
+  364  ls
+  365  cd turncable
+  366  ls
+  367  bundle install
+  368  ls
+  369  vi
+  370  ls
+  371  vi
+  372  git init
+  373  git branch -M master
+  374  git branch
+  375  git branch list
+  376  git add *
+  377  git commit -m "First commit"
+  378  git config --global user.email "kent@openissues.ca"
+  379  git config --global user.name "Kent Mewhort"
+  380  git commit -m "First commit"
+  381  git remote add origin git@github.com:kmewhort/turncable.git
+  382  git push -u origin master
+  383  git push
+  384  ls
+  385  cd lib
+  386  ls
+  387  cp ../../turncable-proto/* .
+  388  ls
+  389  cp -R ../../turncable-proto/* .
+  390  ls
+  391  cd config/
+  392  ls
+  393  mv * ../../config
+  394  cd ..
+  395  ls
+  396  rm -R config/
+  397  cat Gemfile
+  398  cd ..
+  399  vi Gemfile
+  400  ls
+  401  cd lib/
+  402  ls
+  403  rm Gemfile
+  404  rm Gemfile.lock 
+  405  ls
+  406  cat turncable.rb 
+  407  mv turncable.rb turncable-test.rb
+  408  ls
+  409  ls ../bin/
+  410  ls
+  411  cd ..
+  412  ls
+  413  git add *
+  414  gst
+  415  git commit -m "Move over prototype utils"
+  416  git psuh
+  417  git push
+  418  ls
+  419  exit
+  420  history
+  421  cd turncable
+  422  ls
+  423  git log
+  424  ls
+  425  vi
+  426  ls
+  427  cd turncable
+  428  git pull
+  429  cat .gitignore 
+  430  mv .gitignore ..
+  431  git pull
+  432  cp ../.gitignore .
+  433  ls
+  434  gst
+  435  git diff
+  436  git add .gitignore 
+  437  git commit -m "Better gitignore"
+  438  git diff
+  439  bundle exec rails s
+  440  bundle install
+  441  ls
+  442  cd turncable
+  443  bundle install
+  444  bundle exec rails s
+  445  bundle exec rails s -i 192.168.86.226
+  446  bundle exec rails s --binding 192.168.86.226
+  447  bundle exec rails s --binding 192.168.86.226 -p80
+  448  sudo bundle exec rails s --binding 192.168.86.226 -p80
+  449  sudo sh -c "bundle exec rails s --binding 192.168.86.226 -p80"
+  450  sudo sh -c "cd ~pi/turcable; bundle exec rails s --binding 192.168.86.226 -p80"
+  451  sudo sh -c "cd ~pi/turncable; bundle exec rails s --binding 192.168.86.226 -p80"[B
+  452  cat ~/.zshrc 
+  453  cat ~/.bashrc 
+  454  cat ~/.bashrc |grep rvm
+  455  cat ~/.bashrc
+  456  ls
+  457  pwd
+  458  ls bin/
+  459  cat bin/bundle 
+  460  vi ./bin/start.sh
+  461  cat bin/bundle 
+  462  /bin/sh
+  463  vi ./bin/start.sh
+  464  pwd
+  465  vi ./bin/start.sh
+  466  history |grep bundle
+  467  vi ./bin/start.sh
+  468  mv ./bin/start.sh .
+  469  chmod 117 start.sh 
+  470  ls
+  471  sudo so root
+  472  sudo su root
+  473  vi ~/.bashrc 
+  474  vi ~/.zshrc 
+  475  ls ~/.rvm/bin/
+  476  rvmsudo
+  477  cat start.sh 
+  478  sudo cat start.sh
+  479  sudo chmod 777 start.sh 
+  480  sudorvm bundle exec rails s --binding 192.168.86.226 -p80
+  481  ls ~/.rvm/bin/
+  482  rvmsudo bundle exec rails s --binding 192.168.86.226 -p80
+  483  vi ./start.sh 
+  484  ./start.sh 
+  485  sudo su root
+  486  /var/log/syslog
+  487  cat /var/log/syslog
+  488  ls
+  489  cd turncable
+  490  cat start.sh 
+  491  RAILS_ENV=production ~pi/.rvm/bin/rvm in ~pi/turncable do bundle exec rails s --binding 192.168.86.226 -p80 -d
+  492  vi start.sh 
+  493  cat Gemfile
+  494  reboot now
+  495  sudo reboot now
+  496  cat /var/log/syslog
+  497  cat /var/log/syslog |grep local
+  498  ls
+  499  cd turncable
+  500  ./start.sh 
+  501  cat log/production.log 
+  502  ls log/
+  503  cat log/development.log 
+  504  tail log/development.log 
+  505  tail -f log/development.log 
+  506  tail -f log/production.log 
+  507  ls
+  508  cat start.sh 
+  509  export RAILS_ENV=production
+  510  ~pi/.rvm/bin/rvm in ~pi/turncable do bundle exec rails s --binding 192.168.86.226 -p80
+  511  sudo su root
+  512  RAILS_ENV=production rake assets:precompile
+  513  vi /etc/rc.local 
+  514  sudo vi /etc/rc.local 
+  515  mkdir /home/pi/.config/autostart
+  516  vi /home/pi/.config/autostart/turncable.desktop
+  517  cat /etc/rc.local 
+  518  vi /home/pi/.config/autostart/turncable.desktop
+  519  sudo reboot
+  520  cd turncable/log/
+  521  ls
+  522  cd ..
+  523  ls
+  524  cd turncable/log/
+  525  ls
+  526  cd log/
+  527  ls
+  528  xfce
+  529  startx
+  530  ls
+  531  history |grep conf
+  532  raspi-config
+  533  sudo raspi-config
+  534  cd turncable
+  535  ls
+  536  cat log/st
+  537  cd log/
+  538  ls
+  539  ps -aux |grep puma
+  540  ps -aux |grep rails
+  541  ps -aux |grep bash
+  542  ps -Av |grep bash
+  543  ps -av |grep bash
+  544  ls
+  545  tail production.log 
+  546  tail -f production.log 
+  547  ls
+  548  history |grep vi
+  549  vi /home/pi/.config/autostart/turncable.desktop
+  550  cd ..
+  551  ls
+  552  vi start.sh 
+  553  cat /home/pi/.config/autostart/turncable.desktop
+  554  vi start.sh 
+  555  rm /home/pi/.config/autostart/turncable.desktop 
+  556  sudo vi /lib/systemd/system/turntable.service
+  557  sudo vi /lib/systemd/system/turntable.service
+  558  cd turncable
+  559  ls
+  560  cat start.sh 
+  561  sudo vi /lib/systemd/system/turntable.service
+  562  sudo systemctl daemon-reload
+  563  sudo systemctl enable turncable.service
+  564  sudo mv /lib/systemd/system/turntable.service /lib/systemd/system/turncable.service
+  565  sudo systemctl daemon-reload
+  566  sudo systemctl enable turncable.service
+  567  sudo reboot
+  568  ls
+  569  cd turncable/log/
+  570  ls
+  571  cat startup.log 
+  572  ls
+  573  cd ..
+  574  ls
+  575  vi start.sh 
+  576  ./start.sh 
+  577  sudo reboot
+  578  cd turncable/log/
+  579  ls
+  580  cat startup.log 
+  581  cd ..
+  582  vi start.sh 
+  583  rm log/startup.log 
+  584  sudo reboot
+  585  ls
+  586  cd turncable
+  587  ls
+  588  cd log/
+  589  ls
+  590  cat startup.log 
+  591  ls
+  592  sudo su root
+  593  ~/.rvm/bin/sudorvm
+  594  ~/.rvm/bin/rvmsudo
+  595  cd ..
+  596  vi start.sh 
+  597  sudo su root
+  598  rvmsudo
+  599  rvm
+  600  cat start.sh 
+  601  rvmsudo do bundle install
+  602  rvmsudo in /home/pi/turncable bundle install
+  603  vi start.sh 
+  604  sudo su root
+  605  sudo reboot
+  606  ls
+  607  cd turncable
+  608  ls
+  609  cat log/startup.log 
+  610  ls
+  611  rm log/startup.log 
+  612  sudo reboot
+  613  exit
+  614  cd turncable
+  615  ls
+  616  cat log/startup.log 
+  617  ls
+  618  cat start.sh 
+  619  ./start.sh 
+  620  chmod 777 log/startup.log 
+  621  sudo chmod 777 log/startup.log 
+  622  ./start.sh 
+  623  sudo ./start.sh 
+  624  sudo su root
+  625  ls
+  626  history
+  627  vi /lib/systemd/system/turncable.service
+  628  sudo vi /lib/systemd/system/turncable.service
+  629  sudo l
+  630  sudo ls
+  631  vi start.sh 
+  632  rm log/startup.log 
+  633  sudo reboot
+  634  cd turncable
+  635  ls
+  636  cat log/startup.log 
+  637  ls
+  638  history |grep service
+  639  sudo systemctl disable turncable.service 
+  640  sudo systemctl enable turncable.service 
+  641  sudo vi /lib/systemd/system/turncable.service
+  642  vi start.sh 
+  643  sudo reboot
+  644  cd turncable
+  645  ls
+  646  cat log/startup.log 
+  647  vi start.sh 
+  648  ./start.sh 
+  649  vi start.sh 
+  650  sudo reboot
+  651  cd turncable
+  652  vi
+  653  vim
+  654  cd ..
+  655  cd turncable-proto/
+  656  ls
+  657  cat turncable.rb 
+  658  cd ..
+  659  cd turncable
+  660  vi
+  661  ls
+  662  cd ..
+  663  ls
+  664  cd turncable-proto/
+  665  ls
+  666  ./turncable.rb
+  667  ruby turncable.rb
+  668  cd ..
+  669  cd turncable
+  670  bundle exec rails c
+  671  ./start.sh 
+  672  cd turncable
+  673  ps -A v |grep pmua
+  674  ps -A v |grep puma
+  675  kill 476
+  676  kill -9 476
+  677  sudo kill 476
+  678  vi .env
+  679  vi
+  680  vi .env
+  681  cp .env .env.template
+  682  ./start.sh 
+  683  vi start.sh 
+  684  ./start.sh 
+  685  ls
+  686  vi
+  687  ./start.sh 
+  688  vi
+  689  bundle exec rake db:rollback
+  690  vi db/migrate/20210829011505_create_disc.rb 
+  691  rake db:migrate
+  692  vi
+  693  gst
+  694  git diff
+  695  git status
+  696  git add *
+  697  git status
+  698  git commit -m "Disc model"
+  699  git psuh
+  700  git push
+  701  cd turncable
+  702  ls
+  703  vi app/views/application/index.html.erb 
+  704  bundle exec rails 
+  705  bundle exec rails c
+  706  git pull
+  707  vi app/views/application/index.html.erb 
+  708  vi lib/tasks/turncable.rake 
+  709  vi app/controllers/application_controller.rb 
+  710  vi config/routes.rb 
+  711  gst
+  712  git dif
+  713  git status
+  714  git add app/models/config.rb 
+  715  git add app/views/application/
+  716  git commit -m "Minor fixes"
+  717  gst
+  718  git diff
+  719  git pull
+  720  ./start.sh 
+  721  ls
+  722  cd turncable
+  723  ls
+  724  cat server.sh 
+  725  cp server.sh worker.sh
+  726  vi worker.sh 
+  727  vi lib/tasks/turncable.rake 
+  728  vi app/models/disc.rb 
+  729  history |grep rake
+  730  cat lib/tasks/turncable.rake 
+  731  ls
+  732  vi worker.sh 
+  733  pwd
+  734  crontab -e
+  735  ls
+  736  cp server.sh worker.sh 
+  737  vi worker.sh 
+  738  history |grep systemd
+  739  history |grep service
+  740  sudo systemctl disable turncable.service
+  741  sudo rm /lib/systemd/system/turncable.service
+  742  ls
+  743  git mv turncable.service turncableserver.service
+  744  cp turncableserver.service turncableworker.service
+  745  vi turncableworker.service
+  746  cp *.service /lib/systemd/system/
+  747  sudo cp *.service /lib/systemd/system/
+  748  sudo systemctl enable turncableserver.service
+  749  sudo systemctl enable turncableworker.service
+  750  sudo reboot
+  751  cd turncable
+  752  ls
+  753  cat log/startup.log 
+  754  cat log/worker.log 
+  755  ls
+  756  cat server.sh 
+  757  cat worker.sh 
+  758  cat log/worker.log 
+  759  rm log/worker.log 
+  760  cat log/worker.log 
+  761  ps -Av |grep rake
+  762  ps -A v |grep rake
+  763  cat log/worker.log 
+  764  ls
+  765  vi turncableworker.service 
+  766  vi worker.sh 
+  767  vi turncableworker.service 
+  768  vi worker.sh 
+  769  ps
+  770  ps -A v |grep worker
+  771  ps -A v |grep rake
+  772  kill 6020
+  773  ps -A v |grep rake
+  774  ps -A v |grep worker
+  775  kill 6318
+  776  kill 6432
+  777  ps -A v |grep worker
+  778  ps -A v |grep rake
+  779  history |grep system
+  780  sudo systemctl disable turnncableworker
+  781  sudo systemctl disable turncableworker.service
+  782  sudo reboot
+  783  cd turncable
+  784  ls
+  785  ls bin/
+  786  cd lib
+  787  ls
+  788  ruby authorize_spotify.rb 
+  789  ls
+  790  cd ..
+  791  ls
+  792  cd config/
+  793  ls
+  794  cp spotify_app.json spotify_app.json.old
+  795  vi spotify_app.json
+  796  cd ..
+  797  cd lib/
+  798  ls
+  799  ruby authorize_spotify.rb 
+  800  cd ..
+  801  cd config/
+  802  ls
+  803  cp spotify_app.json.old spotify_app.json
+  804  rm spotify_app.json.old 
+  805  cd ..
+  806  cd lib/
+  807  ls
+  808  ruby authorize_spotify.rb 
+  809  bundle exec ruby authorize_spotify.rb 
+  810  vi authorize_spotify.rb 
+  811  curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+  812  echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+  813  sudo apt-get update && sudo apt-get install spotify-client
+  814  sudo rm /etc/apt/sources.list.d/spotify.list 
+  815  curl -sL https://dtcooper.github.io/raspotify/install.sh | sh
+  816  sudo service raspotify start
+  817  history |grep systemd
+  818  history |grep service
+  819  cd turncable
+  820  ls
+  821  cd log/
+  822  ls
+  823  tail startup.log 
+  824  rm /home/pi/turncable/tmp/pids/server.pid
+  825  sudo reboot
+  826  ls
+  827  cd turncable
+  828  ls
+  829  cd config/
+  830  ls
+  831  cat spotify_auth.json 
+  832  cd ..
+  833  cd lib/
+  834  ls
+  835  ruby authorize_spotify.rb 
+  836  ls
+  837  vi authorize_spotify.rb 
+  838  cd ..
+  839  vi Gemfile
+  840  cd lib/
+  841  bundle exec authorize_spotify.rb 
+  842  bundle exec ruby authorize_spotify.rb 
+  843  cd ..
+  844  sudo reboot now
+  845  ls
+  846  cd turncable
+  847  vi app/views/application/index.html.erb 
+  848  vi /etc/default/raspotify 
+  849  sudo vim /etc/default/raspotify 
+  850  sudo systemctl restart raspotify
+  851  sudo apt-get install bluealsa pulseaudio
+  852  sudo systemctl status bluetooth.service
+  853  history
+  854  history |grep omx
+  855  omxplayer -o alsa:bluealso ./file_example_MP3_700KB.mp3 
+  856  cat /etc/rc.local 
+  857  bluetoothctl connect 'F0:41:C8:3E:BC:A6'
+  858  history |grep restart
+  859  sudo systemctl restart raspotify
+  860  aplay -D bluealsa:DEV=00:25:DB:78:86:98,PROFILE=sco test.wav
+  861  cat /etc/rc.local 
+  862  aplay -D bluealsa:DEV=F0:41:C8:3E:BC:A6,PROFILE=sco test.wav
+  863  aplay -D bluealsa:DEV=F0:41:C8:3E:BC:A6,PROFILE=sco ./file_example_MP3_700KB.mp3 
+  864  wget https://filesamples.com/samples/audio/mp3/Symphony%20No.6%20(1st%20movement).mp3
+  865  wget "https://filesamples.com/samples/audio/mp3/Symphony%20No.6%20(1st%20movement).mp3"
+  866  mv Symphony\ No.6\ \(1st\ movement\).mp3 test.mp3
+  867  aplay -D bluealsa:DEV=F0:41:C8:3E:BC:A6,PROFILE=sco ./test.mp3
+  868  vi ~/.asoundrc 
+  869  cat /etc/asound.conf 
+  870  vi ~/.asoundrc 
+  871  cat /etc/asound.conf 
+  872  aplay -D bluealsa:DEV=F0:41:C8:3E:BC:A6,PROFILE=sco ./test.mp3
+  873  wget https://file-examples-com.github.io/uploads/2017/11/file_example_WAV_1MG.wav
+  874  aplay -D bluealsa:DEV=F0:41:C8:3E:BC:A6,PROFILE=sco ./file_example_WAV_1MG.wav 
+  875  vi /etc/asound.conf 
+  876  git clone https://github.com/bablokb/pi-btaudio.git
+  877  cd pi-btaudio
+  878  sudo tools/install
+  879  vi /etc/asound.conf
+  880  sudo ~~
+  881  sudo sudo ~~
+  882  sudo vi /etc/asound.conf
+  883  rm ~/.asoundrc 
+  884  sudo reboot
+  885  aplay -D bluealsa:DEV=F0:41:C8:3E:BC:A6,PROFILE=sco ./file_example_WAV_1MG.wav 
+  886  ls
+  887  cd turncable
+  888  ls
+  889  cat log/worker.log 
+  890  ps -aux |grep ruby
+  891  ps -aux |grep rails
+  892  history |grep system
+  893  sudo systemctl status turncableworker
+  894  sudo systemctl start turncableworker
+  895  sudo systemctl enable turncableworker
+  896  cd turncable
+  897  ls
+  898  vi turncableworker.service 
+  899  vi worker.sh 
+  900  vi lib/tasks/turncable.rake 
+  901  bundle exec rake turnncable:check_disc
+  902  bundle exec rake turncable:check_disc
+  903  vi lib/tasks/turncable.rake 
+  904  bundle exec rake turncable:check_disc
+  905  vi worker.sh 
+  906  sudo reboot
+  907  cd turncable
+  908  ls
+  909  gst
+  910  git diff
+  911  git status
+  912  git add app/views/application/index.html.erb 
+  913  git add config/spotify_auth.json 
+  914  cat .env
+  915  git add .env 
+  916  git add turncableworker.service 
+  917  git add worker.sh 
+  918  ls
+  919  gst
+  920  git diff
+  921  git help rm
+  922  gst
+  923  git diff
+  924  ls
+  925  git status
+  926  git commit -m "Worker scripts"
+  927  gst
+  928  bundle exec rails c
+  929  ls
+  930  vi
+  931  gst
+  932  git diff
+  933  git add app/controllers/application_controller.rb 
+  934  git add lib/spotify_client.rb 
+  935  git commit -m "Add playback duration"
+  936  git push
+  937  git pull
+  938  rake db:migrate
+  939  vi app/views/application/index.html.erb 
+  940  cat lib/
+  941  cat lib/tasks/turncable.rake 
+  942  bundle exec rake turncable:check_disc
+  943  bundle exec rails c
+  944  cd turncable
+  945  vi ./lib/spotify_client.rb 
+  946  sudo reboot now
+  947  cd turncable
+  948  bundle exec rails c
+  949  history |grep rake
+  950  bundle exec rake turncable:check_disc
+  951  cd turncable
+  952  bundle exec rake turncable:check_disc
+  953  vi worker.sh 
+  954  bundle exec rake turncable:check_disc
+  955  history |grep worke
+  956  ps -aux |grep work
+  957  ps -aux |grep rake
+  958  ps -aux |grep worker.sh
+  959  kill 460
+  960  ps -aux |grep worker.sh
+  961  vi worker.sh 
+  962  bundle exec rake turncable:check_disc
+  963  git status
+  964  git add app/views/application/index.html.erb 
+  965  git add lib/spotify_client.rb 
+  966  git add lib/tasks/
+  967  git add worker.sh 
+  968  git commit -m "Misc fixes"
+  969  git push
+  970  git status
+  971  sudo reboot now
+  972  ls
+  973  cd turncable
+  974  gst
+  975  git diff
+  976  gst
+  977  git diff
+  978  git status
+  979  git psuh
+  980  git push
+  981  exit
+  982  ls
+  983  cd turncable
+  984  ls
+  985  git fetch origin/master
+  986  git fetch origin master
+  987  ls
+  988  cp db/development.sqlite3 ..
+  989  cp config/spotify_a* ../
+  990  git reset --hard origin/master
+  991  ls config
+  992  git status
+  993  mv ../development.sqlite3 db/
+  994  cp ../spotify_app.json config/
+  995  cp ../spotify_auth.json config/
+  996  cd config/
+  997  ls
+  998  vi spotify_app.json 
+  999  cd ..
+ 1000  gst
+ 1001  git status
+ 1002  git add config/spotify_app.json 
+ 1003  vi .gitignore
+ 1004  git status
+ 1005  git add .gitignore 
+ 1006  git status
+ 1007  git commit -m "Blank credentials"
+ 1008  cp ../spotify_app.json config/spotify_app.json 
+ 1009  cat config/spotify_app.json 
+ 1010  gst
+ 1011  git status
+ 1012  vi .gitignore
+ 1013  git status
+ 1014  git add .gitignore 
+ 1015  git commit --amend
+ 1016  git status
+ 1017  git push
+ 1018  git checkout -- config/spotify_app.json
+ 1019  git status
+ 1020  cat .gitignore
+ 1021  cp ../spotify_auth.json config/spotify_auth.json 
+ 1022  git status
+ 1023  cat config/spotify_auth.json 
+ 1024  cp ../spotify_app.json config/spotify_app.json 
+ 1025  git status
+ 1026  vi README.md 
+ 1027  history |grep apt
+ 1028  cat .ruby-version 
+ 1029  vi README.md 
+ 1030  ls
+ 1031  history |grep systemd
+ 1032  vi README.md 
+ 1033  history |grep service
+ 1034  vi README.md 
+ 1035  service start turncableserver
+ 1036  systemctl help
+ 1037  systemctl --help
+ 1038  vi README.md 
+ 1039  systemctl start turncableserver
+ 1040  vi README.md 
+ 1041  history |grep system
+ 1042  history |grep blue
+ 1043  vi README.md 
+ 1044  ls
+ 1045  ls lib
+ 1046  vi README.md 
+ 1047  ls
+ 1048  cat worker.sh 
+ 1049  vi README.md 
+ 1050  vi
+ 1051  cat package.json 
+ 1052  history |grep yarn
+ 1053  vi README.md 
+ 1054  history
+ 1055  history > command_history.txt
