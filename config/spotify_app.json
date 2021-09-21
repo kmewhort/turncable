@@ -1,0 +1,5 @@
+{
+  "client_id": "<your spotify app id>",
+  "client_secret": "<your spotify app secret>",
+  "redirect_uri": "https://example.com/fake_redirect"
+}
