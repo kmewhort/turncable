@@ -5,7 +5,7 @@ class Disc < ApplicationRecord
   def self.find_from_current_card
     require 'taptag'
     require 'taptag/nfc'
-    Taptag::NFC.interface_type = :i2c
+    Taptag::NFC.interface_type = ENV['INTERFACE_TYPE'].to_sym 
     card = Taptag::NFC.card_uid&.pack('c*')&.unpack1('H*')
     Disc.find_by(nfc_uuid: card)
   end

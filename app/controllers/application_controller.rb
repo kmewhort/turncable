@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
     return nil unless ENV['ENABLE_NFC']
     require 'taptag'
     require 'taptag/nfc'
-    Taptag::NFC.interface_type = :i2c
+    Taptag::NFC.interface_type = ENV['INTERFACE_TYPE'].to_sym 
     Taptag::NFC
   end
 end
