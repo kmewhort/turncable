@@ -1,4 +1,6 @@
-# Turncable
+# Turncable - A tiny turntable with NFC discs for Spotify tracks & playlists
+
+![Turncable device](/turncable_photo_1.jpg)
 
 # Installation
 
@@ -6,7 +8,7 @@
 
 ### Hardware
 * Rasberry Pi
-* NFC hat
+* PN532 NFC hat
 
 ### Software
 * Ruby 2.7.4
@@ -28,6 +30,10 @@ bundle install
 ```
 bundle exec rake db:create db:schema:load
 ```
+
+## NFC setup
+
+Turncable uses [taptag](https://github.com/jtp184/taptag) for interfacing with the PN532 NFC controller.  See instructions there for NFC setup. If you're not using I2C for communication, you can change the communication interface in `.env`. 
 
 ## Spotify setup
 
